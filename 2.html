@@ -1,0 +1,25 @@
+<script>
+    let maisVelho = 0;
+    let maisNovo = 999;
+
+    let aa = parseInt(prompt("Digite o ano atual:"));
+
+    for(let i=1; i<=5; i++){
+        let an = parseInt(prompt("Usuário "+i+", digite o ano de nascimento:"));
+
+        let id = aa - an;
+
+        document.write("Idade: "+id+" anos<br>");
+
+        if(id > maisVelho){
+            maisVelho = id;
+        }
+
+        if(id < maisNovo){
+            maisNovo = id;
+        }
+    }
+
+    document.write("O mais velho tem: "+maisVelho+" anos<br>");
+    document.write("O mais novo tem: "+maisNovo+" anos");
+</script>
